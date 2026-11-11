@@ -40,7 +40,7 @@ Dê um clique duplo no arquivo index.html para abri-lo em qualquer navegador web
 
 👥 Equipe Desenvolvedora (Grupo)
 
-Membro 1: [Nome Completo] - RA: [Número] (Responsável pela Base UI, Protótipo e Home)
+Membro 1: Caio Hentz Peres Silva - RA: 1252026100391 (Responsável pela Base UI, Protótipo e Home)
 
 Membro 2: [Nome Completo] - RA: [Número] (Responsável pela Lógica da Triagem Virtual)
 
