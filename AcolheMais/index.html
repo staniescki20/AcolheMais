@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AcolheMais — Cuidado e Vínculo em Saúde</title>
+  <meta name="description" content="Portal de saúde humanizado com triagem virtual, gestão de medicamentos e espaço de feedback.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Red+Hat+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class="nav-logo">
+        <img src="logo.png" alt="AcolheMais" class="logo-img">
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="triagem.html">Triagem Virtual</a></li>
+        <li><a href="cuidados.html">Meus Cuidados</a></li>
+        <li><a href="feedback.html">Mural</a></li>
+        <li><a href="triagem.html" class="btn btn-primary">Iniciar triagem</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="hero-tag">Portal de Saúde Humanizado</p>
+          <h1>Cuidado e vínculo para quem busca saúde</h1>
+          <p class="hero-lead">Três ferramentas integradas para orientar, organizar e registrar a sua jornada — do primeiro sintoma ao feedback da consulta.</p>
+          <div class="hero-actions">
+            <a href="triagem.html" class="btn btn-primary">Iniciar triagem</a>
+            <a href="#servicos" class="btn btn-secundario">Conhecer o portal</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img src="stock_images/images-2.jpeg" alt="Médica atendendo paciente com atenção e cuidado" class="hero-foto">
+        </div>
+      </div>
+    </section>
+
+    <section class="secao servicos" id="servicos">
+      <div class="container">
+        <h2>O que o AcolheMais oferece</h2>
+        <p class="secao-lead">Do primeiro contato ao cuidado contínuo, cada funcionalidade foi pensada para o paciente.</p>
+        <ul class="cards-grid">
+
+          <li class="card">
+            <div class="card-icone">
+              <svg viewBox="0 0 48 48" fill="none">
+                <rect width="48" height="48" rx="12" fill="#5296A5" fill-opacity="0.1"/>
+                <path d="M24 15 C18 15 13 20 13 26 C13 35 24 40 24 40 C24 40 35 35 35 26 C35 20 30 15 24 15Z" stroke="#16425B" stroke-width="1.75"/>
+                <line x1="24" y1="21" x2="24" y2="32" stroke="#5296A5" stroke-width="2" stroke-linecap="round"/>
+                <line x1="18.5" y1="26.5" x2="29.5" y2="26.5" stroke="#5296A5" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Triagem Virtual</h3>
+            <p>Formulário interativo de autoavaliação de sintomas. O sistema calcula a prioridade do atendimento e exibe orientações personalizadas.</p>
+            <a href="triagem.html" class="card-link">Fazer triagem →</a>
+          </li>
+
+          <li class="card">
+            <div class="card-icone">
+              <svg viewBox="0 0 48 48" fill="none">
+                <rect width="48" height="48" rx="12" fill="#16425B" fill-opacity="0.07"/>
+                <rect x="13" y="13" width="22" height="18" rx="3" stroke="#16425B" stroke-width="1.75"/>
+                <line x1="17" y1="19" x2="31" y2="19" stroke="#5296A5" stroke-width="1.75" stroke-linecap="round"/>
+                <line x1="17" y1="23.5" x2="27" y2="23.5" stroke="#5296A5" stroke-width="1.75" stroke-linecap="round"/>
+                <circle cx="31" cy="33" r="6" fill="#EFE9F4" stroke="#5296A5" stroke-width="1.75"/>
+                <line x1="31" y1="30.5" x2="31" y2="34" stroke="#5296A5" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="29" y1="33" x2="33" y2="33" stroke="#5296A5" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Meus Cuidados</h3>
+            <p>Gerencie medicamentos e consultas num único lugar. Dados salvos diretamente no navegador com LocalStorage — sem criar conta.</p>
+            <a href="cuidados.html" class="card-link">Organizar cuidados →</a>
+          </li>
+
+          <li class="card">
+            <div class="card-icone">
+              <svg viewBox="0 0 48 48" fill="none">
+                <rect width="48" height="48" rx="12" fill="#5296A5" fill-opacity="0.1"/>
+                <path d="M13 16 H35 A2 2 0 0 1 37 18 V30 A2 2 0 0 1 35 32 H20 L13 38 V18 A2 2 0 0 1 15 16Z" stroke="#16425B" stroke-width="1.75"/>
+                <line x1="18" y1="22" x2="30" y2="22" stroke="#5296A5" stroke-width="1.5" stroke-linecap="round"/>
+                <line x1="18" y1="26.5" x2="25" y2="26.5" stroke="#5296A5" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Mural de Feedback</h3>
+            <p>Compartilhe sua experiência com o serviço. Depoimentos aparecem em tempo real e fortalecem o vínculo entre pacientes e profissionais.</p>
+            <a href="feedback.html" class="card-link">Deixar feedback →</a>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+    <section class="secao como-funciona" id="como-funciona">
+      <div class="container">
+        <h2>Três passos para o seu cuidado</h2>
+        <p class="secao-lead">Simples, direto e disponível quando você precisar.</p>
+        <ol class="passos">
+          <li class="passo">
+            <span class="passo-num">01</span>
+            <div>
+              <h3>Descreva seus sintomas</h3>
+              <p>Use a Triagem Virtual para responder perguntas simples sobre como você está se sentindo. Leva menos de 2 minutos.</p>
+            </div>
+          </li>
+          <li class="passo">
+            <span class="passo-num">02</span>
+            <div>
+              <h3>Receba orientação personalizada</h3>
+              <p>O sistema avalia sua prioridade e indica o próximo passo: buscar atendimento imediato, agendar consulta ou monitorar em casa.</p>
+            </div>
+          </li>
+          <li class="passo">
+            <span class="passo-num">03</span>
+            <div>
+              <h3>Acompanhe e registre sua saúde</h3>
+              <p>Gerencie medicamentos e consultas em Meus Cuidados. Ao se sentir melhor, compartilhe sua experiência no Mural.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="cta-secao">
+      <div class="container cta-inner">
+        <h2>Como você está se sentindo hoje?</h2>
+        <p>A triagem orienta seu próximo passo com segurança. Gratuita, sem cadastro, direto no navegador.</p>
+        <a href="triagem.html" class="btn btn-branco">Iniciar triagem agora</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape-inner">
+      <div>
+        <img src="logo.png" alt="AcolheMais" class="rodape-logo">
+        <p>Portal de saúde humanizado. Desenvolvido para a disciplina de Desenvolvimento Web — Unisinos 2025.</p>
+      </div>
+      <nav>
+        <ul class="rodape-links">
+          <li><a href="triagem.html">Triagem Virtual</a></li>
+          <li><a href="cuidados.html">Meus Cuidados</a></li>
+          <li><a href="feedback.html">Mural de Feedback</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container rodape-bottom">
+      <p>© 2025 AcolheMais — Caio Hentz, Arthur Silveira e equipe.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
