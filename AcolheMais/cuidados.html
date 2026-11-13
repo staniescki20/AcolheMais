@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AcolheMais — Cuidado e Vínculo em Saúde</title>
+  <meta name="description" content="Portal de saúde humanizado com triagem virtual, gestão de medicamentos e espaço de feedback.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Red+Hat+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class="nav-logo">
+        <img src="logo.png" alt="AcolheMais" class="logo-img">
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="triagem.html">Triagem Virtual</a></li>
+        <li><a href="cuidados.html">Meus Cuidados</a></li>
+        <li><a href="feedback.html">Mural</a></li>
+        <li><a href="triagem.html" class="btn btn-primary">Iniciar triagem</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="pagina">
+      
+      <!-- Cabeçalho da página com o mesmo fundo do header -->
+      <section class="pagina-topo">
+          <div class="container" style="text-align: center;">
+              <h1>Meus Cuidados & Diário</h1>
+              <p class="pagina-descricao">Prepare-se para sua consulta e não esqueça de nenhum detalhe.</p>
+          </div>
+          <div class="container">
+              <div class="form-card">
+                  
+                  <div class="painel-resumo" id="boasVindas">
+                      <p>Carregando suas informações de saúde...</p>
+                  </div>
+                  
+                  <h3>Diário de Consulta</h3>
+                  <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #666;">
+                      Anote abaixo dúvidas ou sintomas para relatar ao médico:
+                  </p>  
+                  
+                  <form id="formDiario">
+                      <div class="input-grupo">
+                          <input type="text" id="novaAnotacao" placeholder="Ex: Perguntar se posso fazer exercícios físicos..." required>
+                          <button type="submit" class="btn btn-primary">Adicionar</button>
+                      </div>
+                  </form>
+                  
+                  <ul class="lista-diario" id="listaDiario"></ul>
+
+              </div>
+          </div>
+      </section>
+  </main>
+ 
+  <footer class="rodape">
+    <div class="container rodape-inner">
+      <div>
+        <img src="logo.png" alt="AcolheMais" class="rodape-logo">
+        <p>Portal de saúde humanizado. Desenvolvido para a disciplina de Desenvolvimento Web — Unisinos 2025.</p>
+      </div>
+      <nav>
+        <ul class="rodape-links">
+          <li><a href="triagem.html">Triagem Virtual</a></li>
+          <li><a href="cuidados.html">Meus Cuidados</a></li>
+          <li><a href="feedback.html">Mural de Feedback</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container rodape-bottom">
+      <p>© 2026 AcolheMais — Arthur Silveira, Caio Hentz e Jonatas de Oliveira.</p>
+    </div>
+  </footer>
+
+  <!-- Ligação com o arquivo JavaScript do Diário -->
+  <script src="js/crudCuidados.js"></script>
+
+</body>
+</html>

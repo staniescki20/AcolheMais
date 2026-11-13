@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AcolheMais — Cuidado e Vínculo em Saúde</title>
+  <meta name="description" content="Portal de saúde humanizado com triagem virtual, gestão de medicamentos e espaço de feedback.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Red+Hat+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class="nav-logo">
+        <img src="logo.png" alt="AcolheMais" class="logo-img">
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="triagem.html">Triagem Virtual</a></li>
+        <li><a href="cuidados.html">Meus Cuidados</a></li>
+        <li><a href="feedback.html">Mural</a></li>
+        <li><a href="triagem.html" class="btn btn-primary">Iniciar triagem</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="pagina">
+      
+      <section class="pagina-topo">
+          <div class="container" style="text-align: center;">
+              <h1>Triagem Virtual</h1>
+              <p class="pagina-descricao">Responda algumas perguntas rápidas para orientarmos seu atendimento de forma humanizada.</p>
+          </div>
+     
+
+      <section class="secao">
+          <div class="container">
+              <div class="form-card">
+                  
+                  <form id="formularioTriagem">
+                      
+                      <!-- ETAPA 1: Nome -->
+                      <div class="etapa ativo" id="passoUm">
+                          <h3>Qual é o seu nome?</h3>
+                          <input type="text" id="nomePaciente" placeholder="Digite seu nome completo" required>
+                          
+                          <div class="form-actions">
+                              <button type="button" class="btn btn-primary btn-avancar">Avançar</button>
+                          </div>
+                      </div>
+
+                      <!-- ETAPA 2: Dados -->
+                      <div class="etapa" id="passoDois">
+                          <h3>Para seu prontuário, informe seus dados:</h3>
+                          <label>CPF:</label>
+                          <input type="text" id="cpfPaciente" placeholder="000.000.000-00">
+                          
+                          <label>Data de Nascimento:</label>
+                          <input type="date" id="dataNasc">
+                          
+                          <div class="form-actions">
+                              <button type="button" class="btn btn-secundario btn-voltar">Voltar</button>
+                              <button type="button" class="btn btn-primary btn-avancar">Avançar</button>
+                          </div>
+                      </div>
+
+                      <!-- ETAPA 3: Sintomas -->
+                      <div class="etapa" id="passoTres">
+                          <h3>Como você está se sentindo hoje?</h3>
+                          <label>Nível de dor (1 a 10):</label>
+                          <input type="number" id="nivelDor" min="1" max="10" placeholder="1 = Sem dor, 10 = Dor máxima">
+                          
+                          <label>Sintoma Principal:</label>
+                          <select id="sintoma">
+                              <option value="leve">Dor de cabeça leve / Coriza</option>
+                              <option value="moderado">Febre alta / Vômito</option>
+                              <option value="grave">Falta de ar / Dor no peito</option>
+                          </select>
+
+                          <div class="form-actions">
+                              <button type="button" class="btn btn-secundario btn-voltar">Voltar</button>
+                              <button type="submit" class="btn btn-primary btn-finalizar">Finalizar Triagem</button>
+                          </div>
+                      </div>
+
+                  </form>
+
+                  <!-- Resultado da triagem -->
+                  <div id="resultadoFinal"></div>
+              
+              </div>
+          </div>
+      </section>
+     </section>
+  </main>
+
+   <footer class="rodape">
+    <div class="container rodape-inner">
+      <div>
+        <img src="logo.png" alt="AcolheMais" class="rodape-logo">
+        <p>Portal de saúde humanizado. Desenvolvido para a disciplina de Desenvolvimento Web — Unisinos 2025.</p>
+      </div>
+      <nav>
+        <ul class="rodape-links">
+          <li><a href="triagem.html">Triagem Virtual</a></li>
+          <li><a href="cuidados.html">Meus Cuidados</a></li>
+          <li><a href="feedback.html">Mural de Feedback</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container rodape-bottom">
+      <p>© 2026 AcolheMais — Arthur Silveira, Caio Hentz e Jonatas de Oliveira.</p>
+    </div>
+  </footer>
+  <script src="js/triagemForm.js"></script>
+</body>
+</html>

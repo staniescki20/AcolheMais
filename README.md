@@ -40,16 +40,12 @@ Dê um clique duplo no arquivo index.html para abri-lo em qualquer navegador web
 
 👥 Equipe Desenvolvedora (Grupo)
 
-Membro 1: Caio Hentz Peres Silva - RA: 1252026100391 (Responsável pela Base UI, Protótipo e Home)
+Membro 1: Caio Hentz Peres Silva - RA: 1252026100391 (Responsável pela Base UI e Home)
 
-Membro 2: [Nome Completo] - RA: [Número] (Responsável pela Lógica da Triagem Virtual)
+Membro 2 : Arthur Silveira  - RA: 1252025100728 (Responsável pela Lógica da Triagem Virtual / funcionalidade Meus Cuidados / Lógica de LocalStorage)
 
-Membro 3: Arthur Silveira  - RA: 1252025100728 (Responsável pela funcionalidade Meus Cuidados / Lógica de LocalStorage)
-
-Membro 4: [Nome Completo] - RA: [Número] (Responsável pelo Mural de Feedback dinâmico e Edição do Vídeo)
+Membro 3: [Nome Completo] - RA: [Número] (Responsável pelo Mural de Feedback dinâmico e Edição do Vídeo)
 
 📎 Links e Entregáveis
-
-Link do Protótipo (Figma/Miro): [Insira o link aqui]
 
 Vídeo de Apresentação (MP4): O arquivo de vídeo foi anexado na entrega principal explicando o código-fonte em execução.
